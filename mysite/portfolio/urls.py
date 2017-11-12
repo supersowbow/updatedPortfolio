@@ -9,4 +9,5 @@ urlpatterns = [
 
     #Projects Page
     url(r'^projects/$', views.projects, name='projects'),
+
 ]
