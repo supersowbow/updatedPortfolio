@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,6 +13,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
     <body>
 
@@ -30,12 +35,13 @@
                 <div class="col-5 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="{% url 'home:index' %}">Home</a></li>
+                        <li><a href="{% url 'projects:projects' %}">Projects</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             <div style="text-align:center">
+              <h5 style="text-align: left; padding-left: 10px;">Social</h5>
               <a class="btn btn-social-icon btn-github" href="https://github.com/supersowbow"><i class="fa fa-github"></i></a>
               <a class="btn btn-social-icon btn-stack-overflow" href="https://stackoverflow.com/users/8697898/k-bow?tab=profile"><i class="fa fa-stack-overflow "></i></a>
               <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/kyla-bowers-876611152/"><i class="fa fa-linkedin"></i></a>
