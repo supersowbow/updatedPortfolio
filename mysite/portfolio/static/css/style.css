@@ -16,6 +16,14 @@ nav {
     height: auto;
 }
 
+#lang {
+  color: black;
+}
+
+#skills {
+  padding: 100px 50px 100px 50px;
+}
+
 footer {
   background: #10131A;
   padding: 80px 40px 80px 40px;
