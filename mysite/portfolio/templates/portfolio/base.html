@@ -19,14 +19,9 @@
   </head>
     <body>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            {% block content %}
-            {% endblock %}
-          </div>
-        </div>
-      </div>
+      {% block content %}
+      {% endblock %}
+
 
 <!-- Below is the Footer -->
     <footer class="footer">
@@ -40,7 +35,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-            <div style="text-align:center">
+            <div id="social" style="text-align:center">
               <h5 style="text-align: left; padding-left: 10px;">Social</h5>
               <a class="btn btn-social-icon btn-github" href="https://github.com/supersowbow"><i class="fa fa-github"></i></a>
               <a class="btn btn-social-icon btn-stack-overflow" href="https://stackoverflow.com/users/8697898/k-bow?tab=profile"><i class="fa fa-stack-overflow "></i></a>
