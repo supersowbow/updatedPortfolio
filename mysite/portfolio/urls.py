@@ -4,10 +4,13 @@ from . import views
 
 
 urlpatterns = [
-    #Home Page
+    # Home Page
     url(r'^$', views.index, name='index'),
 
-    #Projects Page
+    # Projects Page
     url(r'^projects/$', views.projects, name='projects'),
+
+    # Contact Page
+    url(r'^contact/$', views.email, name='email'),
 
 ]

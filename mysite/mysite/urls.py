@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('portfolio.urls', namespace='home')),
     url(r'^projects/', include('portfolio.urls', namespace='projects')),
+    url(r'', include('portfolio.urls', namespace='email')),
 ]

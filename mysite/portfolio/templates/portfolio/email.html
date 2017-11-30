@@ -1,0 +1,45 @@
+{% extends 'portfolio/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<!-- Navigation Bar -->
+<nav class="navbar fixed-top navbar-expand-lg scrolling-navbar navbar-dark navcustom">
+  <a id="brand" class="navbar-brand" href="{% url 'home:index' %}">>Ky Codes<</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="{% url 'home:index' %}">Home</a>
+        <a class="nav-item nav-link" href="{% url 'projects:projects' %}">Projects</a>
+        <a class="nav-item nav-link active" href="#">Contact<span class="sr-only">(current)</span></a>
+      </div>
+    </div>
+</nav>
+
+<!-- Contact Form -->
+<div class="#" id="contact">
+    <div class="card card-1 card-block">
+        <form method="POST" action="https://formspree.io/kybow@protonmail.com">
+            <h2 id="contactme">Contact Me :)</h2>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input class="form-control" type="text" placeholder="Enter Full Name" name="name">
+            </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="_replyto">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Message" name="textarea"></textarea>
+          </div>
+          <button class="btn btn-primary" value="Send">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}

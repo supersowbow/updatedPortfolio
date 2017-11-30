@@ -2,6 +2,7 @@
   height: 100%;
 } */
 
+
 nav {
   background-color: #0E0F13;
   opacity: 80%;
@@ -29,7 +30,7 @@ body {
 }
 
 #contact {
-  padding: 40px 20px 40px 20px;
+  padding: 80px 20px 40px 20px;
   background-color: #66FCF1;
 }
 
